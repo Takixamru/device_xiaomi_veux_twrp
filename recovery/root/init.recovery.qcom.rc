@@ -25,12 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-	# TWRP Decryption Scrripts
-	import /init.recovery.qcom_decrypt.rc
-
-on early-fs
-    write /proc/sys/kernel/sched_lib_name "recovery,magiskboot,Updater,updater,update_engine_sideload"
-    write /proc/sys/kernel/sched_lib_mask_force 255
+import /init.recovery.qcom_decrypt.rc
 
 on fs
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
