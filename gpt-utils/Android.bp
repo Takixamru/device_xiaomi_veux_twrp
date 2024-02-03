@@ -16,7 +16,7 @@
 
 
 cc_library {
-    name: "libgptutils.moonstone",
+    name: "libgptutils.stone",
     vendor: true,
     recovery_available: true,
     shared_libs: [

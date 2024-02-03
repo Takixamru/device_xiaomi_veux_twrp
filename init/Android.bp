@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libinit_moonstone",
+    name: "libinit_stone",
     header_libs: [
         "libbase_headers",
     ],
@@ -9,6 +9,6 @@ cc_library_static {
     static_libs: [
         "libbase",
     ],
-    srcs: ["init_moonstone.cpp"],
+    srcs: ["init_stone.cpp"],
     recovery_available: true,
 }

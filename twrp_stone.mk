@@ -14,20 +14,16 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/moonstone
+DEVICE_PATH := device/xiaomi/stone
 
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := moonstone
+PRODUCT_RELEASE_NAME := stone
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := moonstone
-PRODUCT_NAME := twrp_moonstone
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO X5
+PRODUCT_DEVICE := stone
+PRODUCT_NAME := twrp_stone
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := moonstone,sunstone
