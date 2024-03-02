@@ -7,6 +7,8 @@
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
         vendor.goodix.hardware.sensors.health.xml
         vendor.fs.fsalsps@1.0.xml
         fod_matrix.xml
@@ -16,6 +18,7 @@
         vendor_framework_compatibility_matrix.xml
         vendor.xiaomi.cit.wifi@1.0_compatibility_matrix.xml
         vendor.xiaomi.cit.bluetooth@1.0_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
@@ -50,7 +53,7 @@
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
 -->
-<compatibility-matrix version="4.0" type="framework">
+<compatibility-matrix version="5.0" type="framework">
     <hal format="hidl" optional="true">
         <name>android.hardware.automotive.evs</name>
         <version>1.1</version>
@@ -1264,11 +1267,25 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.aon</name>
+        <interface>
+            <name>IAlwaysOn</name>
+            <instance>miaonservicehal</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.bgservice</name>
         <version>1.0</version>
         <interface>
             <name>IBGService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.blackbox</name>
+        <interface>
+            <name>IBlackboxImpl</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1309,6 +1326,14 @@
         <version>1.0</version>
         <interface>
             <name>ICld</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.displayfeature</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayFeature</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1500,6 +1525,27 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMrm</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMiCertificate</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.xiaomi.hardware.mrm</name>
+        <interface>
+            <name>IMrmRemoteAuth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.mtdservice</name>
         <version>1.0-3</version>
@@ -1529,6 +1575,14 @@
         <version>1.0</version>
         <interface>
             <name>IQuickCameraService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.swap</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISwap</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1673,4 +1727,3 @@
         <vbmeta-version>1.0</vbmeta-version>
     </avb>
 </compatibility-matrix>
-
